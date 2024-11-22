@@ -1,0 +1,15 @@
+ <nav class="nav">
+      <span class="brand">Footwear Ltd</span>
+      <ul>
+        <li><a href="/"><i class="bi bi-house"></i> Home</a></li>
+        <li><a href="/cart"><i class="bi bi-cart"></i> Cart</a></li>
+        @if(Model.authenticated){
+            <li><a href="/logout"><i class="bi bi-power"></i> Logout</a></li>
+        }
+        else
+        {
+            <li><a href="/register"><i class="bi bi-person-fill-add"></i> Register</a></li> 
+            <li><a href="/login"><i class="bi bi-key"></i> Login</a></li> 
+        }
+      </ul>
+</nav>
